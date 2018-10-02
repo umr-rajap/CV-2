@@ -1,0 +1,80 @@
+.tab {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.tablinks {
+    border: none;
+    text-align: center;
+    background-color: whitesmoke;
+    color: $color2;
+    // border: 1px solid $whitesmoke-darker;
+    // border-top-color: transparent;
+    height: 50px;
+
+    &:hover {
+        color: $color1;
+        background: linear-gradient($whitesmoke-dark, whitesmoke);
+        cursor: pointer;
+        // border-bottom: 1px solid transparent;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    .icon {
+        display: none;
+    }
+}
+
+.eduTabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.eduLinks {
+    background-color: transparent;
+    border: none;
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+    }
+    .lca {
+        width: 150px;
+    }
+    &:hover {
+        background: linear-gradient($whitesmoke-dark, whitesmoke);
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+// .eduGrid {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+
+//     #academy {
+//         grid-column: 1/2;
+//     }
+
+//     #university {
+//         grid-column: 2/3;
+//     }
+
+//     #highschool {
+//         grid-column: 3/4;
+//     }
+// }
+
+.active {
+    background: linear-gradient($whitesmoke-darker, whitesmoke);
+}
+
+.eduActive {
+    background: linear-gradient($whitesmoke-darker, whitesmoke);
+}

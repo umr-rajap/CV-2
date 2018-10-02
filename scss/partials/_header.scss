@@ -1,0 +1,100 @@
+header {
+    height: 100vh;
+    color: $color3;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) 10% 15% 10%;
+
+    background: {
+        image: url(../images/header.jpeg);
+        attachment: fixed;
+        size: 100% 100%;
+    }
+
+    h1 {
+        font: {
+            family: 'Cinzel', serif;
+            size: 4em;
+        }
+        margin: 100px auto;
+    }
+
+    h3 {
+        font: {
+            family: 'Cinzel', serif;
+            size: 1.5em;
+        }
+        margin: 20px auto;
+    }
+    
+    .social-links {
+        button {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+        }
+
+        font: {
+            size: 2em;
+        }
+        margin: 0 auto;
+
+        .gitIcon {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: $githubGrey;
+            }
+        }
+        
+        .linkedIcon {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: $linkedInBlue;
+                cursor: pointer;
+            }
+        }
+
+        #contactShow {
+            color: white;
+
+            &:hover {
+                color: $color5;
+            }
+        }
+
+        .downloadBtn {
+            background-color: white;
+             width: 30px;
+             height: 30px;
+             margin-top: 10px;
+        }
+    }
+
+    .downloadBtn {
+        text-decoration: none;
+        color: white;
+        margin: 0 auto;
+        font: {
+            size: 2em;
+        }
+        &:hover {
+            color: $color5;
+        }
+    }
+
+    .arrow-down {
+        text-decoration: none;
+        font-size: 3em;
+        margin: 0 auto;
+        a {
+            color: white;
+
+            &:hover {
+                color: $color5;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,18 @@
+.tabcontent {
+    animation: fadeEffect 0.3s; /* Fading effect takes 1 second */
+}
+
+.eduContent {
+    animation: fadeEffect linear 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes moveLeft {
+    0% { right: 100%;}
+    100% { right: 0%;}
+}

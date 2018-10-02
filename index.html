@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+
+  <title>CV | Um'r Rajap</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- changes spaces on page -->
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <!-- link to the main stylesheet -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+
+  <!-- link fontawesome stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/fa-brands.css">
+  <link rel="stylesheet" type="text/css" href="css/fa-regular.css">
+  <link rel="stylesheet" type="text/css" href="css/fa-solid.css">
+  <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="container2">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+
+      <header>
+        <h1>Um'r Rajap</h1>
+
+        <h3>Junior Web Developer</h3>
+
+        <div class="social-links">
+            <a href="https://github.com/umr-rajap" class="gitIcon" target="_blank"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/um-r-rajap-92b190169/" class="linkedIcon" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <button id="contactShow"><i class="fas fa-phone-square"></i></button>
+
+            <div id="contactDetails" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Contact Details</h3>
+                <p>Cell: 071 471 2546</p>
+                <p>Email: rajapumr6@gmail.com</p>
+              </div>
+
+            </div>
+        </div>
+
+        <div class="arrow-down">
+            <a href="#section-2"><i class="fas fa-angle-down"></i></a>
+        </div>
+      </header>
+      <main id="section-2">
+
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'about_me')" id="defaultOpen"><span class="label">Personal Details</span><span class="icon"><i class="fas fa-user-circle"></i></span></button>
+          <button class="tablinks" onclick="openTab(event, 'academic_details')"><span class="label">Academic Details</span><span class="icon"><i class="fas fa-book"></i></span></button>
+          <button class="tablinks" onclick="openTab(event, 'skills')"><span class="label">Skills</span><span class="icon"><i class="fas fa-wrench"></i></span></button>
+          <button class="tablinks" onclick="openTab(event, 'hobbies_interests')"><span class="label">Portfolio</span><span class="icon"><i class="fas fa-folder-open"></i></i></span></button>
+        </div>
+
+        <section id="about_me" class="tabcontent">
+          <div class="wrapper">
+            <div class="aboutGrid">
+              <h2>About Me</h2>
+              <img src="images/profile.jpg" alt="" class=".profileImg">
+
+              <p>                A very hardworking and ambitious person with a passion for working with Electronics.
+                Have been building computers with my brother for many years, and recently gotten into the software side of computers.
+                Developed quite a few websites while completing a Full Stack Web Development Course.
+                A very curious person with an analytical mind, looking for the bases of everything and always looking for the efficient way to solve a problem.
+                Eager to be challenged in order to grow and improve my skills.
+<br><br>
+                Cell no: 071 471 2546
+<br><br>
+                Email: rajapumr6@gmail.com</p>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="academic_details" class="tabcontent">
+          <div class="wrapper">
+            <h2>Academic Details</h2>
+
+            <div class="eduTabs">
+              <button class="eduLinks" onclick="openEdu(event, 'academy')" id="defaultOpen2"><img src="images/salesianlifechoicesacademy.png" alt="" class="lca"></button>
+              <button class="eduLinks" onclick="openEdu(event, 'highschool')"><img src="images/TLC.png" alt=""  class="rhs"></button>
+            </div>
+            <div class="eduGrid">
+              <div id="academy" class="eduContent">
+                <p>2018: Salesians Life Choices Academy</p>
+                <p>Fullstack Web Development (6 months full-time course)</p>
+                <p>The Life Choices Academy is a full-time program which empowers youth from the Cape Flats with life, practical and professional development skills. We did intensive study of the following web development languages: HTML, CSS, SASS, jQuery, JavaScript, Node and MongoDB. As part of our professional development, we had the opportunity to use online resources such as MOOCs, were taught Design Thinking and made use of resources for personal reflection, such as DISC profiles and SMART goal setting.</p>
+                <p>This course has allowed me to alter my way of thinking and develop a method of looking at the whole picture more objectively than I did before. It has also forced me to engage with people from different backgrounds, allowing me to put my objective views into practice. I have begun to think more about what I want to do in the future and to believe that I can achieve it.</p>
+              </div>
+
+              <div id="highschool" class="eduContent">
+                <p>2013-2017: The Leadership College</p>
+                <p>Matric Certificate</p>
+                <ul>
+                  <li>English</li>
+                  <li>Afrikaans</li>
+                  <li>Maths literacy</li>
+                  <li>Life Sciences</li>
+                  <li>Geography</li>
+                  <li>Business Studies</li>
+                  <li>Life Orientation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="tabcontent">
+          <div class="wrapper">
+            <h2>Skills and hobbies</h2>
+            <ul>
+              <li>HTML, CSS and Javascript</li>
+              <li>Learning C++</li>
+              <li>Competitive Gaming</li>
+              <li>Swimming</li>
+              <li>Rugby</li>
+            </ul>
+            <div class="languages">
+              <i class="fab fa-java"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-sass"></i>
+              <i class="fab fa-node"></i>
+            </div>
+          </div>
+        </section>
+
+        <section id="hobbies_interests" class="tabcontent">
+          <div class="wrapper">
+            <h2>Portfolio</h2>
+            <p>These are the projects I worked on as I was learning web development:</p>
+              <div class="code4ct">
+                <a href="https://umr-rajap.github.io/Code4C/" target="_blank" class="project">
+                  <h2>Code4CT</h2>
+                </a>
+              </div><br>
+              <div class="blog">
+                <a href="https://guide-to-militarymayhem.glitch.me/blogs" target="_blank" class="project" >
+                  <h2>Blog</h2>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- <footer>
+          <span class="contact-details">0722230710|salieomar.os@gmail.com </span><span class="social-links"></span>
+        </footer> -->
+      </main>
+    </div>
+  </div>
+  <script>
+    document.getElementById("defaultOpen").click();
+
+    function openTab(evt, sectionName) {
+
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("tabcontent");
+
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablinks");
+
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      document.getElementById(sectionName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+  <script>
+    document.getElementById("defaultOpen2").click();
+
+    function openEdu(evt, sectionName) {
+
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("eduContent");
+
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("eduLinks");
+
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" eduActive", "");
+      }
+
+      document.getElementById(sectionName).style.display = "block";
+      evt.currentTarget.className += " eduActive";
+    }
+  </script>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('contactDetails');
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("contactShow");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
+</body>
+</html>

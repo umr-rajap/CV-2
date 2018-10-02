@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Cinzel|Sarala");
+@font-face {
+  font-family: 'Black Han';
+  src: url("../fonts/blackhansans-regular-webfont.woff2") format("woff2"), url("../fonts/blackhansans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Playfair';
+  src: url("../fonts/playfairdisplay-black-webfont.woff2") format("woff2"), url("../fonts/playfairdisplay-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+html {
+  scroll-behavior: smooth; }
+  html button:hover, html a:hover {
+    cursor: pointer; }
+
+body {
+  font-family: 'Sarala', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  text-align: justify; }
+
+main {
+  height: 100vh;
+  background-image: url(../images/keyboard.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: #065D6F; }
+
+h1 {
+  margin-top: 0; }
+
+.wrapper {
+  padding: 75px;
+  background-color: whitesmoke; }
+  .wrapper h2 {
+    text-align: center; }
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 10px; }
+  .aboutGrid h2 {
+    grid-column: 1/3; }
+  .aboutGrid img {
+    margin: auto;
+    height: 150px;
+    width: 200px; }
+
+.languages {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 2em;
+  text-align: center; }
+
+.underline {
+  text-decoration: underline;
+  font-size: 1.1em; }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px; }
+  .projects .code4ct {
+    background-image: url("../images/Code4ct.png");
+    background-size: 100% 100%; }
+  .projects .blog {
+    background-image: url("../images/blog.png");
+    background-size: 100% 100%; }
+  .projects .project {
+    display: grid;
+    grid-template-rows: 70% 30%;
+    height: 200px;
+    text-decoration: none; }
+    .projects .project h2 {
+      grid-row: 2;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.4);
+      margin: 0; }
+
+.tabcontent {
+  animation: fadeEffect 0.3s;
+  /* Fading effect takes 1 second */ }
+
+.eduContent {
+  animation: fadeEffect linear 1s;
+  /* Fading effect takes 1 second */ }
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes moveLeft {
+  0% {
+    right: 100%; }
+  100% {
+    right: 0%; } }
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #A0E8AF;
+  position: fixed;
+  top: 0; }
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 5px;
+  background: #065D6F;
+  width: 0%; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+header {
+  height: 100vh;
+  color: #75D6D0;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr) 10% 15% 10%;
+  background-image: url(../images/header.jpeg);
+  background-attachment: fixed;
+  background-size: 100% 100%; }
+  header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 4em;
+    margin: 100px auto; }
+  header h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5em;
+    margin: 20px auto; }
+  header .social-links {
+    font-size: 2em;
+    margin: 0 auto; }
+    header .social-links button {
+      border: none;
+      background-color: transparent;
+      padding: 0; }
+    header .social-links .gitIcon {
+      text-decoration: none;
+      color: white; }
+      header .social-links .gitIcon:hover {
+        color: #c6cbd1; }
+    header .social-links .linkedIcon {
+      text-decoration: none;
+      color: white; }
+      header .social-links .linkedIcon:hover {
+        color: #665ed0;
+        cursor: pointer; }
+    header .social-links #contactShow {
+      color: white; }
+      header .social-links #contactShow:hover {
+        color: #A0E8AF; }
+    header .social-links .downloadBtn {
+      background-color: white;
+      width: 30px;
+      height: 30px;
+      margin-top: 10px; }
+  header .downloadBtn {
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    font-size: 2em; }
+    header .downloadBtn:hover {
+      color: #A0E8AF; }
+  header .arrow-down {
+    text-decoration: none;
+    font-size: 3em;
+    margin: 0 auto; }
+    header .arrow-down a {
+      color: white; }
+      header .arrow-down a:hover {
+        color: #A0E8AF; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #A0E8AF;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #A0E8AF;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+  color: #012586; }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+.tab {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); }
+
+.tablinks {
+  border: none;
+  text-align: center;
+  background-color: whitesmoke;
+  color: #065D6F;
+  height: 50px; }
+  .tablinks:hover {
+    color: #012586;
+    background: linear-gradient(#dfdfdf, whitesmoke);
+    cursor: pointer; }
+  .tablinks:focus {
+    outline: 0; }
+  .tablinks .icon {
+    display: none; }
+
+.eduTabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+.eduLinks {
+  background-color: transparent;
+  border: none; }
+  .eduLinks img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px; }
+  .eduLinks .lca {
+    width: 150px; }
+  .eduLinks:hover {
+    background: linear-gradient(#dfdfdf, whitesmoke); }
+  .eduLinks:focus {
+    outline: 0; }
+
+.active {
+  background: linear-gradient(#cbcbcb, whitesmoke); }
+
+.eduActive {
+  background: linear-gradient(#cbcbcb, whitesmoke); }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: white; }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.1em; }
+
+  .wrapper {
+    padding: 40px; }
+
+  .aboutGrid {
+    display: block; }
+    .aboutGrid img {
+      display: block;
+      margin: 0 auto; }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr); }
+    .projects .project img {
+      width: 150px;
+      height: 75px; } }
+@media (max-width: 360px) {
+  body {
+    font-size: 0.9em; }
+
+  .wrapper {
+    padding: 30px; }
+
+  .projects {
+    grid-template-columns: repeat(1, 1fr); }
+    .projects .project img {
+      width: 100px;
+      height: 50px; } }
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 3em; }
+  header h3 {
+    font-size: 1.4em; }
+  header .social-links #contactDetails {
+    font-size: 0.5em; } }
+@media (max-width: 360px) {
+  header h1 {
+    font-size: 2em; }
+  header h3 {
+    font-size: 1.2em; } }
+@media (max-width: 768px) {
+  .tablinks .label {
+    display: none; }
+  .tablinks .icon {
+    display: block; }
+
+  .eduLinks .lca {
+    width: 160px; } }
+@media (max-width: 500px) {
+  .eduLinks img {
+    height: 75px;
+    width: 75px; }
+  .eduLinks .lca {
+    width: 100px; } }
+@media (max-width: 430px) {
+  .eduLinks img {
+    height: 50px;
+    width: 50px; } }
+
+/*# sourceMappingURL=styles.css.map */
